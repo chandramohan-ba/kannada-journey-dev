@@ -72,12 +72,16 @@ var IMAGES = {
    The page shows your picture and writes the speech bubbles and signs on
    top of it. If a picture file is missing, the built-in drawing is shown.
    Files go in the folder assets/images/ :
-     home1     Home page
+     home1     Home page, page 1 (the welcome)
+     home2     Home page, page 2 (three key differentiators)
+     home3     Home page, page 3 (your journey in seven steps)
      contact0  Contact page, page 1 (teacher invites the student to fill the form)
      contact1  Contact page, page 2 (student fills the form)
    --------------------------------------------------------------------- */
 var PHOTOS = {
   home1:    { src: "assets/images/home-welcome.jpg" },
+  home2:    { src: "assets/images/home-usp-threekeydifferentiators.jpg" },
+  home3:    { src: "assets/images/home-sevenstepjourney.jpg" },
   contact0: { src: "assets/images/contact-teachersuggestingformfilling.jpg" },
   contact1: { src: "assets/images/contact-studentfillingform.jpg" }
 };
