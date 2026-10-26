@@ -102,7 +102,26 @@ var PHOTOS = {
   programsOverview:    { src: "assets/images/programs-overview.jpg" },
   programsStage1:    { src: "assets/images/programs-stage1.jpg" },
   programsProgram1:    { src: "assets/images/programs-program1.jpg" },
-  programsProgram1Detail:    { src: "assets/images/programs-program1-detail.jpg" }
+  programsProgram1Detail:    { src: "assets/images/programs-program1-detail.jpg" },  
+  programsProgram2:    { src: "assets/images/programs-program2.jpg" },
+  programsProgram2Detail:    { src: "assets/images/programs-program2-detail.jpg" },  
+  programsProgram3:    { src: "assets/images/programs-program3.jpg" },
+  programsProgram3Detail:    { src: "assets/images/programs-program3-detail.jpg" },  
+  programsProgram4:    { src: "assets/images/programs-program4.jpg" },
+  programsProgram4Detail:    { src: "assets/images/programs-program4-detail.jpg" },
+  programsStage2:    { src: "assets/images/programs-stage2.jpg" },
+  programsProgram5:    { src: "assets/images/programs-program5.jpg" },
+  programsProgram5Detail:    { src: "assets/images/programs-program5-detail.jpg" },  
+  programsProgram6:    { src: "assets/images/programs-program6.jpg" },
+  programsProgram6Detail:    { src: "assets/images/programs-program6-detail.jpg" },  
+  programsProgram7:    { src: "assets/images/programs-program7.jpg" },
+  programsProgram7Detail:    { src: "assets/images/programs-program7-detail.jpg" },  
+  programsProgram8:    { src: "assets/images/programs-program8.jpg" },
+  programsProgram8Detail:    { src: "assets/images/programs-program8-detail.jpg" },
+  programsStage3:    { src: "assets/images/programs-stage3.jpg" }
+  
+  /* programsProgram9:    { src: "assets/images/programs-program9.jpg" },
+  programsProgram9Detail:    { src: "assets/images/programs-program9-detail.jpg" }, */
 };
 
 /* ---------------------------------------------------------------------
