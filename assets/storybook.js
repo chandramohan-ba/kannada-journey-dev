@@ -92,7 +92,12 @@ var PHOTOS = {
   whoIT:    { src: "assets/images/whoitsfor-it.jpg" },
   whoYoga:    { src: "assets/images/whoitsfor-yoga.jpg" },
   whoFamily:    { src: "assets/images/whoitsfor-family.jpg" },
-  finale:    { src: "assets/images/whoitsfor-welcome.jpg" }
+  finale:    { src: "assets/images/whoitsfor-welcome.jpg" },
+  how-main:    { src: "assets/images/howitworks-main.jpg" },
+  how-stage1:    { src: "assets/images/howitworks-stage1.jpg" },
+  how-stage2:    { src: "assets/images/howitworks-stage2.jpg" },
+  how-stage3:    { src: "assets/images/howitworks-stage3.jpg" },
+  how-welcome:    { src: "assets/images/howitworks-welcome.jpg" }
 };
 
 /* ---------------------------------------------------------------------
