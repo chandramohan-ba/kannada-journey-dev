@@ -98,7 +98,11 @@ var PHOTOS = {
   howStage2:    { src: "assets/images/howitworks-stage2.jpg" },
   howStage3:    { src: "assets/images/howitworks-stage3.jpg" },
   howWelcome:    { src: "assets/images/howitworks-welcome.jpg" },
-  programsMain:    { src: "assets/images/programs-main.jpg" }
+  programsMain:    { src: "assets/images/programs-main.jpg" },
+  programsOverview:    { src: "assets/images/programs-overview.jpg" },
+  programsStage1:    { src: "assets/images/programs-stage1.jpg" },
+  programsProgram1:    { src: "assets/images/programs-program1.jpg" },
+  programsProgram1Detail:    { src: "assets/images/programs-program1-detail.jpg" }
 };
 
 /* ---------------------------------------------------------------------
