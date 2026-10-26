@@ -852,7 +852,7 @@ SCENES.evHealth = function () {
 };
 
 /* ---------------- ABOUT ---------------- */
-/* SCENES.about0 = function () {
+ SCENES.about0 = function () {
   return wrap(
     skyBg("sbAb0", "#f6c98a", "#fbe9b8") +
     '<rect x="40" y="130" width="400" height="220" fill="#f0d9a8" stroke="' + INK + '" stroke-width="4"/>' +
@@ -914,7 +914,7 @@ SCENES.contact0 = function () {
     bubble(240, 176, 160, 40, "What is your name?", 14, "r") +
     bubble(40, 196, 110, 40, "Rahul", 20, "r")
   );
-}; */
+};
 
 
 /* =====================================================================
