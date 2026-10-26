@@ -1322,3 +1322,21 @@ SCENES.contact1 = function () { return SCENES.finale(); };
     ready();
   }
 })();
+
+// Auto-create lightbox on page load
+document.addEventListener('DOMContentLoaded', () => {
+  const overlay = document.createElement('div');
+  overlay.id = 'lightbox';
+  overlay.innerHTML = '<img id="lightbox-img" alt="Enlarged view">';
+  overlay.onclick = () => overlay.classList.remove('active');
+  document.body.appendChild(overlay);
+
+  // Make every image inside .left-panel clickable
+  document.querySelectorAll('.left-panel img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.onclick = () => {
+      document.getElementById('lightbox-img').src = img.src;
+      overlay.classList.add('active');
+    };
+  });
+});
