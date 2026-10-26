@@ -86,7 +86,13 @@ var PHOTOS = {
   contact1: { src: "assets/images/contact-studentfillingform.jpg" },
   about0:    { src: "assets/images/about-main.jpg" },
   aboutMeasure:    { src: "assets/images/about-measure.jpg" },
-  aboutWelcome:    { src: "assets/images/about-welcome.jpg" }
+  aboutWelcome:    { src: "assets/images/about-welcome.jpg" },
+  who0:    { src: "assets/images/whoitsfor-main.jpg" },
+  whoHealth:    { src: "assets/images/whoitsfor-health.jpg" },
+  whoIT:    { src: "assets/images/whoitsfor-it.jpg" },
+  whoYoga:    { src: "assets/images/whoitsfor-yoga.jpg" },
+  whoFamily:    { src: "assets/images/whoitsfor-family.jpg" },
+  finale:    { src: "assets/images/whoitsfor-welcome.jpg" }
 };
 
 /* ---------------------------------------------------------------------
