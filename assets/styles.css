@@ -740,3 +740,9 @@
   .sb-logo { height: 42px; }
   .sb-logo--hero { height: 84px; }
 }
+
+.sb-spread--wide { grid-template-columns: 1fr; }
+.sb-spread--wide::after { display: none; }                 /* no spine shadow */
+.sb-spread--wide .sb-page--art { border-radius: 10px 10px 0 0; padding-bottom: .6rem; }
+.sb-spread--wide .sb-page--text { border-radius: 0 0 10px 10px; }
+.sb-spread--wide .sb-art { max-width: none; }               /* let the picture use the full width */
