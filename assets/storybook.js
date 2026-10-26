@@ -118,10 +118,10 @@ var PHOTOS = {
   programsProgram7Detail:    { src: "assets/images/programs-program7-detail.jpg" },  
   programsProgram8:    { src: "assets/images/programs-program8.jpg" },
   programsProgram8Detail:    { src: "assets/images/programs-program8-detail.jpg" },
-  programsStage3:    { src: "assets/images/programs-stage3.jpg" }
+  /* programsStage3:    { src: "assets/images/programs-stage3.jpg" } */
   
-  /* programsProgram9:    { src: "assets/images/programs-program9.jpg" },
-  programsProgram9Detail:    { src: "assets/images/programs-program9-detail.jpg" }, */
+  programsProgram9:    { src: "assets/images/programs-program9.jpg" },
+  programsProgram9Detail:    { src: "assets/images/programs-program9-detail.jpg" }
 };
 
 /* ---------------------------------------------------------------------
