@@ -97,7 +97,8 @@ var PHOTOS = {
   howStage1:    { src: "assets/images/howitworks-stage1.jpg" },
   howStage2:    { src: "assets/images/howitworks-stage2.jpg" },
   howStage3:    { src: "assets/images/howitworks-stage3.jpg" },
-  howWelcome:    { src: "assets/images/howitworks-welcome.jpg" }
+  howWelcome:    { src: "assets/images/howitworks-welcome.jpg" },
+  programsMain:    { src: "assets/images/programs-main.jpg" }
 };
 
 /* ---------------------------------------------------------------------
