@@ -93,11 +93,11 @@ var PHOTOS = {
   whoYoga:    { src: "assets/images/whoitsfor-yoga.jpg" },
   whoFamily:    { src: "assets/images/whoitsfor-family.jpg" },
   finale:    { src: "assets/images/whoitsfor-welcome.jpg" },
-  how-main:    { src: "assets/images/howitworks-main.jpg" },
-  how-stage1:    { src: "assets/images/howitworks-stage1.jpg" },
-  how-stage2:    { src: "assets/images/howitworks-stage2.jpg" },
-  how-stage3:    { src: "assets/images/howitworks-stage3.jpg" },
-  how-welcome:    { src: "assets/images/howitworks-welcome.jpg" }
+  howMain:    { src: "assets/images/howitworks-main.jpg" },
+  howStage1:    { src: "assets/images/howitworks-stage1.jpg" },
+  howStage2:    { src: "assets/images/howitworks-stage2.jpg" },
+  howStage3:    { src: "assets/images/howitworks-stage3.jpg" },
+  howWelcome:    { src: "assets/images/howitworks-welcome.jpg" }
 };
 
 /* ---------------------------------------------------------------------
