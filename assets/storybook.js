@@ -1323,7 +1323,7 @@ SCENES.contact1 = function () { return SCENES.finale(); };
   }
 })();
 
-// Auto-create lightbox on page load
+// Create the lightbox overlay once
 document.addEventListener('DOMContentLoaded', () => {
   const overlay = document.createElement('div');
   overlay.id = 'lightbox';
@@ -1331,11 +1331,13 @@ document.addEventListener('DOMContentLoaded', () => {
   overlay.onclick = () => overlay.classList.remove('active');
   document.body.appendChild(overlay);
 
-  // Make every image inside .left-panel clickable
-  document.querySelectorAll('.left-panel img').forEach(img => {
-    img.style.cursor = 'zoom-in';
-    img.onclick = () => {
-      document.getElementById('lightbox-img').src = img.src;
+  // Make every .sb-art image clickable
+  document.querySelectorAll('.sb-art').forEach(div => {
+    div.onclick = () => {
+      const imageEl = div.querySelector('image');
+      const url = imageEl?.getAttribute('href') || imageEl?.getAttribute('xlink:href');
+      if (!url) return;
+      document.getElementById('lightbox-img').src = url;
       overlay.classList.add('active');
     };
   });
