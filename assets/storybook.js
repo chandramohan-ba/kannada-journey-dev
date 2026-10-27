@@ -1393,7 +1393,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	  if (!url) return;
       img.src = url;
       overlay.classList.add('active');
-      hint.style.display = 'block';
+      hint.style.display = 'flex';
     };
   });
 });
