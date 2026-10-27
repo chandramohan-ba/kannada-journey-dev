@@ -780,8 +780,9 @@
   position: relative;
 }
 
+/* u0001F50D */
 .sb-art::after {
-  content: "\u0001F50D";
+  content: "1F50D";
   position: absolute;
   bottom: 8px;
   right: 8px;
