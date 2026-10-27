@@ -1389,7 +1389,8 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('CHECK 3: image clicked');
 	  const imageEl = div.querySelector('image');
       const url = imageEl?.getAttribute('href') || imageEl?.getAttribute('xlink:href');
-      if (!url) return;
+      alert('URL: ' + url);
+	  if (!url) return;
       img.src = url;
       overlay.classList.add('active');
       hint.style.display = 'block';
