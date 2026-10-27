@@ -1382,7 +1382,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  document.querySelectorAll('.left-panel img').forEach(el => {
+  document.querySelectorAll('.sb-art img').forEach(el => {
     el.style.cursor = 'zoom-in';
     el.onclick = () => {
       img.src = el.src;
