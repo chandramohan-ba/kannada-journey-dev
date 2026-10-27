@@ -1354,6 +1354,7 @@ SCENES.contact1 = function () { return SCENES.finale(); };
 */
 
 document.addEventListener('DOMContentLoaded', () => {
+  alert('CHECK 1: script started');
   const overlay = document.createElement('div');
   overlay.id = 'lightbox';
   overlay.innerHTML =
@@ -1361,6 +1362,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '<div id="lightbox-hint">Double-tap image to zoom in</div>' +
     '<img id="lightbox-img" alt="Enlarged view">';
   document.body.appendChild(overlay);
+  alert('CHECK 2: overlay created');
 
   const img = document.getElementById('lightbox-img');
   const hint = document.getElementById('lightbox-hint');
@@ -1384,7 +1386,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.sb-art').forEach(div => {
     div.onclick = () => {
-      const imageEl = div.querySelector('image');
+      alert('CHECK 3: image clicked');
+	  const imageEl = div.querySelector('image');
       const url = imageEl?.getAttribute('href') || imageEl?.getAttribute('xlink:href');
       if (!url) return;
       img.src = url;
