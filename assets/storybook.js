@@ -1382,11 +1382,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  document.querySelectorAll('.sb-art img').forEach(el => {
-    el.style.cursor = 'zoom-in';
-    el.onclick = () => {
-      alert('Click detected');
-	  img.src = el.src;
+  document.querySelectorAll('.sb-art').forEach(div => {
+    div.onclick = () => {
+      const imageEl = div.querySelector('image');
+      const url = imageEl?.getAttribute('href') || imageEl?.getAttribute('xlink:href');
+      if (!url) return;
+      img.src = url;
       overlay.classList.add('active');
       hint.style.display = 'block';
     };
