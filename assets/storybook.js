@@ -1328,7 +1328,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const overlay = document.createElement('div');
   overlay.id = 'lightbox';
   overlay.innerHTML = '<img id="lightbox-img" alt="Enlarged view">';
-  overlay.onclick = () => overlay.classList.remove('active');
+  /* overlay.onclick = () => overlay.classList.remove('active'); */
+  overlay.onclick = (e) => {
+  if (e.target.id === 'lightbox-img') {
+    e.target.classList.toggle('zoomed');
+  } else {
+    overlay.classList.remove('active');
+    document.getElementById('lightbox-img').classList.remove('zoomed');
+  }
+};
+
   document.body.appendChild(overlay);
 
   // Make every .sb-art image clickable
