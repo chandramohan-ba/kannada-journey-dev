@@ -1077,7 +1077,7 @@ var OVERLAYS = {
 function photoScene(p, slot) {
   var ov = OVERLAYS[slot] ? OVERLAYS[slot]() : "";
   return '<svg class="sb-svg-photo" style="aspect-ratio:3 / 2" viewBox="0 0 1536 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" role="img">' +
-    '<image href="' + p.src + '" xlink:href="' + p.src + '" x="0" y="0" width="1536" height="1024" preserveAspectRatio="xMidYMid slice"/>' +
+    '<image href="' + p.src + '" xlink:href="' + p.src + '" x="0" y="0" width="1536" height="1024" preserveAspectRatio="xMidYMid meet"/>' +
     '<g transform="scale(3.2)">' + ov + '</g></svg>';
 }
 /* if the Contact page 2 picture file is missing, the gate drawing is shown */
