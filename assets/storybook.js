@@ -1385,7 +1385,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.sb-art img').forEach(el => {
     el.style.cursor = 'zoom-in';
     el.onclick = () => {
-      img.src = el.src;
+      alert('Click detected');
+	  img.src = el.src;
       overlay.classList.add('active');
       hint.style.display = 'block';
     };
