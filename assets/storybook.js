@@ -1324,11 +1324,11 @@ SCENES.contact1 = function () { return SCENES.finale(); };
 })();
 
 // Create the lightbox overlay once
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
   const overlay = document.createElement('div');
   overlay.id = 'lightbox';
   overlay.innerHTML = '<img id="lightbox-img" alt="Enlarged view">';
-  /* overlay.onclick = () => overlay.classList.remove('active'); */
+  // overlay.onclick = () => overlay.classList.remove('active');
   overlay.onclick = (e) => {
   if (e.target.id === 'lightbox-img') {
     e.target.classList.toggle('zoomed');
@@ -1348,6 +1348,46 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!url) return;
       document.getElementById('lightbox-img').src = url;
       overlay.classList.add('active');
+    };
+  });
+});
+*/
+
+document.addEventListener('DOMContentLoaded', () => {
+  const overlay = document.createElement('div');
+  overlay.id = 'lightbox';
+  overlay.innerHTML =
+    '<button id="lightbox-close">✕</button>' +
+    '<div id="lightbox-hint">Double-tap image to zoom in</div>' +
+    '<img id="lightbox-img" alt="Enlarged view">';
+  document.body.appendChild(overlay);
+
+  const img = document.getElementById('lightbox-img');
+  const hint = document.getElementById('lightbox-hint');
+
+  function closeLightbox() {
+    overlay.classList.remove('active', 'zoomed');
+    img.classList.remove('zoomed');
+  }
+
+  document.getElementById('lightbox-close').onclick = closeLightbox;
+
+  overlay.onclick = (e) => {
+    if (e.target === img) {
+      overlay.classList.toggle('zoomed');
+      img.classList.toggle('zoomed');
+      hint.style.display = overlay.classList.contains('zoomed') ? 'none' : 'block';
+    } else if (e.target === overlay) {
+      closeLightbox();
+    }
+  };
+
+  document.querySelectorAll('.left-panel img').forEach(el => {
+    el.style.cursor = 'zoom-in';
+    el.onclick = () => {
+      img.src = el.src;
+      overlay.classList.add('active');
+      hint.style.display = 'block';
     };
   });
 });
