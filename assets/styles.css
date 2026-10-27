@@ -146,18 +146,6 @@
   backface-visibility: hidden;
 }
 
-.sb-page--narration {
-  font-style: italic;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #5a4632;
-  background: #faf6ef;
-  border-left: 4px solid #d4a24e;
-  padding: 14px 18px;
-  margin: 16px 0;
-  border-radius: 0 8px 8px 0;
-}
-
 /* inner ruled border */
 .sb-page::before {
   content: "";
@@ -269,6 +257,7 @@
   box-shadow: inset 0 0 14px rgba(150,95,30,.2);
   max-width: 36em;
 }
+
 .sb-scroll p { margin: 0; font-style: italic; font-size: .95rem; line-height: 1.6; color: var(--sb-ink-soft); }
 .sb-scroll .sb-scroll__label {
   margin-bottom: .2rem;
