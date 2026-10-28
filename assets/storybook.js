@@ -1064,15 +1064,15 @@ var OVERLAYS = {
       bubble(228, 6, 122, 32, "Namaskara!", 17, "r") +
       ribbon(218, 282, 80, 22, "Welcome", 15);
   },
-  /* Contact page 1: the student gives his name, the teacher asks it */
-  contact0: function () {
-    return bubble(95, 2, 110, 30, "Rohan", 20, "r") +
-      bubble(340, 6, 136, 32, "What is your name?", 12, "l");
-  },
-  /* Contact page 2: a Welcome ribbon across the top */
-  contact1: function () {
-    return ribbon(197, 8, 130, 26, "Welcome", 19);
-  }
+  // /* Contact page 1: the student gives his name, the teacher asks it */
+  // contact0: function () {
+    // return bubble(95, 2, 110, 30, "Rohan", 20, "r") +
+      // bubble(340, 6, 136, 32, "What is your name?", 12, "l");
+  // },
+  // /* Contact page 2: a Welcome ribbon across the top */
+  // contact1: function () {
+    // return ribbon(197, 8, 130, 26, "Welcome", 19);
+  // }
 };
 function photoScene(p, slot) {
   var ov = OVERLAYS[slot] ? OVERLAYS[slot]() : "";
