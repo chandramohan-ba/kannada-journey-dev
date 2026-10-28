@@ -928,28 +928,28 @@ SCENES.about1 = function () {
 
 
 /* ---------------- CONTACT ---------------- */
-SCENES.contact0 = function () {
-  return wrap(
-    skyBg("sbCt0", "#f6c98a", "#fbe9b8") +
-    '<rect x="30" y="120" width="420" height="232" fill="#f0d9a8" stroke="' + INK + '" stroke-width="4"/>' +
-    '<path d="M12 120 L240 40 L468 120 Z" fill="#b5301d" stroke="' + INK + '" stroke-width="4" stroke-linejoin="round"/>' +
-    '<rect x="186" y="150" width="108" height="202" rx="4" fill="#6b4423" stroke="' + INK + '" stroke-width="4"/>' +
-    '<rect x="196" y="160" width="88" height="192" fill="#fde28a" opacity=".55"/>' +
-    '<circle cx="120" cy="206" r="28" fill="#f4b73c" opacity=".4"/><path d="M112 194 H128 L132 216 Q120 226 108 216 Z" fill="#fde28a" stroke="' + INK + '" stroke-width="2.4"/>' +
-    '<circle cx="360" cy="206" r="28" fill="#f4b73c" opacity=".4"/><path d="M352 194 H368 L372 216 Q360 226 348 216 Z" fill="#fde28a" stroke="' + INK + '" stroke-width="2.4"/>' +
-    '<rect x="0" y="352" width="480" height="88" fill="#8fb36f" stroke="' + INK + '" stroke-width="3"/>' +
-    /* table and open guest book */
-    '<rect x="168" y="334" width="144" height="12" rx="3" fill="#7a4a22" stroke="' + INK + '" stroke-width="2.6"/><rect x="178" y="346" width="9" height="40" fill="#7a4a22" stroke="' + INK + '" stroke-width="2"/><rect x="293" y="346" width="9" height="40" fill="#7a4a22" stroke="' + INK + '" stroke-width="2"/>' +
-    '<path d="M240 332 L196 322 L200 296 L240 306 Z" fill="#fff7e2" stroke="' + INK + '" stroke-width="2.6" stroke-linejoin="round"/>' +
-    '<path d="M240 332 L284 322 L280 296 L240 306 Z" fill="#fff0cc" stroke="' + INK + '" stroke-width="2.6" stroke-linejoin="round"/>' +
-    '<path d="M208 310 L232 316 M208 318 L232 324 M248 316 L272 310 M248 324 L272 318" stroke="#b5301d" stroke-width="2" stroke-linecap="round"/>' +
-    fig(110, 432, 1.0, { who: "rahul", l: [-30, -52], r: [58, -98] }) +
-    '<path d="M168 334 L178 326" stroke="' + INK + '" stroke-width="4" stroke-linecap="round"/>' +
-    fig(372, 432, 1.0, { who: "anand", l: [-62, -98], r: [30, -52] }) +
-    bubble(240, 176, 160, 40, "What is your name?", 14, "r") +
-    bubble(40, 196, 110, 40, "Rahul", 20, "r")
-  );
-};
+// SCENES.contact0 = function () {
+  // return wrap(
+    // skyBg("sbCt0", "#f6c98a", "#fbe9b8") +
+    // '<rect x="30" y="120" width="420" height="232" fill="#f0d9a8" stroke="' + INK + '" stroke-width="4"/>' +
+    // '<path d="M12 120 L240 40 L468 120 Z" fill="#b5301d" stroke="' + INK + '" stroke-width="4" stroke-linejoin="round"/>' +
+    // '<rect x="186" y="150" width="108" height="202" rx="4" fill="#6b4423" stroke="' + INK + '" stroke-width="4"/>' +
+    // '<rect x="196" y="160" width="88" height="192" fill="#fde28a" opacity=".55"/>' +
+    // '<circle cx="120" cy="206" r="28" fill="#f4b73c" opacity=".4"/><path d="M112 194 H128 L132 216 Q120 226 108 216 Z" fill="#fde28a" stroke="' + INK + '" stroke-width="2.4"/>' +
+    // '<circle cx="360" cy="206" r="28" fill="#f4b73c" opacity=".4"/><path d="M352 194 H368 L372 216 Q360 226 348 216 Z" fill="#fde28a" stroke="' + INK + '" stroke-width="2.4"/>' +
+    // '<rect x="0" y="352" width="480" height="88" fill="#8fb36f" stroke="' + INK + '" stroke-width="3"/>' +
+    // /* table and open guest book */
+    // '<rect x="168" y="334" width="144" height="12" rx="3" fill="#7a4a22" stroke="' + INK + '" stroke-width="2.6"/><rect x="178" y="346" width="9" height="40" fill="#7a4a22" stroke="' + INK + '" stroke-width="2"/><rect x="293" y="346" width="9" height="40" fill="#7a4a22" stroke="' + INK + '" stroke-width="2"/>' +
+    // '<path d="M240 332 L196 322 L200 296 L240 306 Z" fill="#fff7e2" stroke="' + INK + '" stroke-width="2.6" stroke-linejoin="round"/>' +
+    // '<path d="M240 332 L284 322 L280 296 L240 306 Z" fill="#fff0cc" stroke="' + INK + '" stroke-width="2.6" stroke-linejoin="round"/>' +
+    // '<path d="M208 310 L232 316 M208 318 L232 324 M248 316 L272 310 M248 324 L272 318" stroke="#b5301d" stroke-width="2" stroke-linecap="round"/>' +
+    // fig(110, 432, 1.0, { who: "rahul", l: [-30, -52], r: [58, -98] }) +
+    // '<path d="M168 334 L178 326" stroke="' + INK + '" stroke-width="4" stroke-linecap="round"/>' +
+    // fig(372, 432, 1.0, { who: "anand", l: [-62, -98], r: [30, -52] }) +
+    // bubble(240, 176, 160, 40, "What is your name?", 14, "r") +
+    // bubble(40, 196, 110, 40, "Rohan", 20, "r")
+  // );
+// };
 
 
 /* =====================================================================
