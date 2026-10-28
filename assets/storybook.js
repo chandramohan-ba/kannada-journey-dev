@@ -1066,7 +1066,7 @@ var OVERLAYS = {
   },
   /* Contact page 1: the student gives his name, the teacher asks it */
   contact0: function () {
-    return bubble(95, 2, 110, 30, "Rahul", 20, "r") +
+    return bubble(95, 2, 110, 30, "Rohan", 20, "r") +
       bubble(340, 6, 136, 32, "What is your name?", 12, "l");
   },
   /* Contact page 2: a Welcome ribbon across the top */
