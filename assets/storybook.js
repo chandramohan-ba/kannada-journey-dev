@@ -1362,6 +1362,17 @@ document.addEventListener('DOMContentLoaded', () => {
     '<img id="lightbox-img" alt="Enlarged view">';
   document.body.appendChild(overlay);
   
+  // Add "tap to enlarge" hint to every image that opens the lightbox
+document.querySelectorAll('img').forEach((image) => {
+  // Only add hint to images that are NOT already inside the lightbox
+  if (image.id !== 'lightbox-img') {
+    const hintEl = document.createElement('div');
+    hintEl.className = 'img-tap-hint';
+    hintEl.textContent = 'tap to enlarge';
+    image.insertAdjacentElement('afterend', hintEl);
+  }
+});
+
   const img = document.getElementById('lightbox-img');
   const hint = document.getElementById('lightbox-hint');
 
