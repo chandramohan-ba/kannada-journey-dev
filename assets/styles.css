@@ -827,7 +827,8 @@
 }
 
 .sb-art::after {
-  content: "";
+  /* content: ""; */
+  content: "tap to enlarge";
   position: absolute;
   bottom: 8px;
   right: 8px;
@@ -902,18 +903,4 @@
   border-radius: 20px;
   font-size: 14px;
   pointer-events: none;
-}
-.img-tap-hint {
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 12px;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 4px 10px;
-  border-radius: 12px;
-  pointer-events: none;
-  z-index: 5;
-  white-space: nowrap;
 }

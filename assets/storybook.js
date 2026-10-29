@@ -1381,16 +1381,6 @@ document.addEventListener('DOMContentLoaded', () => {
       closeLightbox();
     }
   };
-  
-  // Add "tap to enlarge" hint to each left-panel image
-document.querySelectorAll('.sb-art').forEach(div => {
-  if (div.querySelector('.img-tap-hint')) return; // prevent duplicates
-  div.style.position = 'relative';
-  const hintEl = document.createElement('div');
-  hintEl.className = 'img-tap-hint';
-  hintEl.textContent = 'tap to enlarge';
-  div.appendChild(hintEl);
-});
 
   document.querySelectorAll('.sb-art').forEach(div => {
     div.onclick = () => {
