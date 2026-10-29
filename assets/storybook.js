@@ -1361,16 +1361,6 @@ document.addEventListener('DOMContentLoaded', () => {
     '<div id="lightbox-hint">tap image to zoom in</div>' +
     '<img id="lightbox-img" alt="Enlarged view">';
   document.body.appendChild(overlay);
-  
-  // Add "tap to enlarge" hint to every image that opens the lightbox
-document.querySelectorAll('img').forEach((image) => {
-  if (image.id !== 'lightbox-img' && !image.closest('#lightbox')) {
-    const hintEl = document.createElement('div');
-    hintEl.className = 'img-tap-hint';
-    hintEl.textContent = 'tap to enlarge';
-    image.parentElement.insertBefore(hintEl, image.nextSibling);
-  }
-});
 
   const img = document.getElementById('lightbox-img');
   const hint = document.getElementById('lightbox-hint');
@@ -1391,6 +1381,16 @@ document.querySelectorAll('img').forEach((image) => {
       closeLightbox();
     }
   };
+  
+  // Add "tap to enlarge" hint to each left-panel image
+document.querySelectorAll('.sb-art').forEach(div => {
+  if (div.querySelector('.img-tap-hint')) return; // prevent duplicates
+  div.style.position = 'relative';
+  const hintEl = document.createElement('div');
+  hintEl.className = 'img-tap-hint';
+  hintEl.textContent = 'tap to enlarge';
+  div.appendChild(hintEl);
+});
 
   document.querySelectorAll('.sb-art').forEach(div => {
     div.onclick = () => {

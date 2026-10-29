@@ -904,9 +904,16 @@
   pointer-events: none;
 }
 .img-tap-hint {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 12px;
-  color: #666;
-  text-align: center;
-  margin-top: 4px;
-  display: block;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 10px;
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: 5;
+  white-space: nowrap;
 }
